@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="MainStyle.css">
+    <script src="Functions.js"></script>
+</head>
+<body>
+    <div class="UBT">
+        <img src="UBT.png" alt="UBT"/>
+    </div>
+    <div class="menu-div">
+        <button class="button" onmouseenter="zoom(this)" onmouseout="normal(this)">Home</button>
+        <button class="button" onmouseenter="zoom(this)" onmouseleave="normal(this)">About us</button>
+        <button class="button" onmouseenter="zoom(this)" onmouseleave="normal(this)">Contact</button>
+    </div>
+    <div class="log-div" id="log-divi">
+        <form id="forma">
+            <div class="up-buttons">
+            <input type="button" value="Login">
+            <input type="button" value="Register" onclick="addLastName()">
+            </div>
+            <label>Username:</label>
+            <input class="txt" type="text" placeholder="username...">
+            <label>Password:</label>
+            <input class="txt" type="text" placeholder="password...">
+            <input class="login" value="Login" type="button">
+        </form>
+    </div>
+    <div class="log-div-2" id="log-divi-2" style="display: none">
+        <form id="forma-2">
+            <div class="up-buttons">
+                <input type="button" value="Login" onclick="back()">
+                <input type="button" value="Register">
+            </div>
+            <label>Username:</label>
+            <input class="txt" type="text" placeholder="username...">
+            <br />
+            <label>Last Name:</label>
+            <input class="txt" type="text" placeholder="lastname...">
+            <br />
+            <label>Password:</label>
+            <input class="txt" type="text" placeholder="password...">
+            <br />
+            <input class = "login" value="Sign up" type="button">
+        </form>
+    </div>
+    <center><a href="https://github.com/arniti/Detyrat-Java-5.git">GitHub</a></center>
+</body>
+</html>
